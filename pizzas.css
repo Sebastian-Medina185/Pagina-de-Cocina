@@ -1,0 +1,234 @@
+body {
+    /* background-color: rgb(137, 233, 73); */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    max-width: 100%;
+    margin: 0 auto;
+}
+nav {
+    width: 100%;
+    height: 160px;
+    background-color: rgba(39, 38, 31, 0.883); /* el ultimo es la transparencia */
+    font-family:  cursive; 
+}
+nav ul li {
+    list-style-type: none; /* Quitar viñetas */
+    display: inline-block; /* Cada opcion se ve una al lado de la otra */ 
+
+    transition: 0.8s all; /* Tiempo de movimiento con mouse encima*/
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 2cm;
+}
+
+h2 {
+text-align: center; 
+font-family: sans-serif;
+}
+
+nav ul li:hover {
+    background-color: #ddae69;
+}
+
+nav ul li a {
+    /* Agregar estilos a los hipervinculos */
+    text-decoration: none; /* Quitar la linea de los hipervinculos */
+    color: white;
+}
+
+li {
+    color: black;
+}
+
+a:visited {
+    /* Cuando es visitado cambia a este color */
+    color: #140b0b;
+}
+
+a:active {
+    /* Cuando se da click en el enlace se cambia a este color*/ 
+    color: #000000;
+}
+
+/* Esrilizamos el logo */
+.img-logo {
+    width: 115px;
+    padding-top: 6px;
+    padding-left: 30px;
+}
+
+nav ul {
+    padding-top: 90px; /* Para que el menu baje un poco de arriba hacia abajo */ 
+    float: right; /* Ubica los elementos del menu de manera flotante a la derecha*/
+
+    /* volver al inex y decomentar el logo principal */
+}
+
+.bannerr {
+    display: grid;
+    grid-template-columns: repeat(12,fr);
+    width: 100%;
+}
+
+
+.banner1 {
+    grid-column: 1/5;
+    width: 100%;
+}
+
+.banner2 {
+    grid-column: 5/12;
+    width: 100%;
+    height: 430px;
+}
+
+.featured {
+    background-color: rgba(117, 117, 117, 0.616);
+    width: 100%;
+}
+
+/* se estiliza el video */
+.fp-video {
+    width: 55%;
+    padding: 2em;
+    overflow-y: visible;
+}
+
+/* Estilizar el article featured (el parrafo */
+.ft-articulo {
+    padding: 200px;
+    width: 67%;
+    vertical-align: top;
+}
+
+/* Estilo general para odos los articulos */
+article {
+    background-color: rgba(190, 226, 59, 0.616);
+    margin: 22px; /* Opcional, para separar los elementos de article */
+    width: 1250px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgba(226, 220, 50, 0.616);
+}
+
+.grid-item {
+    align-content: center;
+    text-align: center;
+    height: 300px;
+    background-color: rgb(122, 122, 122);
+    margin: 0 auto;
+    width: 250px;
+}
+
+.grid-item img {
+    transition: transform 0.3s ease-out;
+}
+
+.grid-item:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+article h1 {
+    border-bottom: solid thin black; /* Subrayar el titulo del h1 "Recetas del mundo" */ 
+}
+
+/* Hacer que el article aparezca al lado dl video */
+.ft-articulo {
+    /* Ambos en linea y en el bloque*/
+    display: inline-block;
+}
+
+.boton-container {
+    height: 40px;
+    padding-top: 20px;
+    text-align: center;
+    background-color: rgb(41, 40, 40);
+    /* Centrase en el article*/
+    margin: 30px 350px;
+    border-radius: 2cm;
+    transition: transform 0.2s ease-out;
+}
+
+.boton-container:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.boton-container a {
+    text-decoration: none; /* Ningun adorno al boton */
+    color: #ffffff;
+}
+
+/* Se estiliza la primer imagen */
+
+.art-cont {
+    height: 530px;
+    width: 740px;
+    vertical-align: top;
+}
+
+h2 {
+    margin: 0;
+    border-bottom: solid thin black;
+}
+
+footer {
+    background-color: rgba(39, 38, 31, 0.883);
+    color: rgb(31,12,134);
+    clear: both; /* Linea para cargar y limpiar elementos no flotantes, ojo que hay que ponerla*/
+    line-height: 30px;
+    text-align: center;
+    padding: 10px 0;
+    padding-left: 90px;
+    display: flex;
+}
+
+.footer-links {
+    width: 25%;
+    padding: 0 25px;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.footer-links ul li a:hover {
+    color: black;
+    padding-left: 6px;
+}
+
+.social-link p {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: aqua;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: brown;
+}
+
+address {
+    align-items: center;
+    font-size: 25px;
+}
+
+
+
